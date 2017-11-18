@@ -37,11 +37,12 @@ BU_: XXX
 
 
 BO_ 513 dash_controls: 8 XXX
- SG_ DASH_SPEED : 39|16@0+ (0.01,0) [0|65535] "" XXX
  SG_ ACCEL_POS : 55|16@0+ (1,0) [0|65535] "" XXX
  SG_ DASH_RPM : 7|16@0+ (0.25,0) [0|65535] "RPM" XXX
+ SG_ DASH_SPEED : 39|16@0+ (0.01,-1000) [0|65535] "kph" XXX
 
 
 
 
 CM_ SG_ 513 ACCEL_POS "Accelerator pedal position; min 0x7D (release), max 0xC87D";
+CM_ SG_ 513 DASH_SPEED "speedometer speed in kph";
